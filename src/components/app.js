@@ -1,9 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Books from '../containers/books.js';
 
-export default class App extends Component {
+export default class App extends React.Component{
   render() {
     return (
-      <div>React simple starter</div>
+      <div>
+        <Books/>
+      </div>
     );
   }
 }
+
+//ReactDOM.render(<App/>, document.querySelector(".container"));
